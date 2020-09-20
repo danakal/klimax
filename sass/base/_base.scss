@@ -1,0 +1,29 @@
+*,
+*::after,
+*::before {
+    margin: 0;
+    padding: 0;
+    box-sizing: inherit;
+}
+
+html {
+    // This defines what 1rem is
+    font-size: 62.5%;
+
+    @media screen and (min-width: 900px) and (max-width: 1200px){
+        font-size: 56,25%; //1 rem = 9px, 9/16 = 50%
+        
+    }
+    @media screen and (min-width: 600px) and (max-width: 900px){
+        font-size: 50%;  //1 rem = 8px, 8/16 = 50%
+       
+    }
+    @media screen and (min-width: 0px) and (max-width: 600px){
+        font-size: 43%; //1rem = 7px, 12/16
+    }
+     
+}
+
+body {
+    box-sizing: border-box;
+}

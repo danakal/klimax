@@ -1,0 +1,51 @@
+.footer {
+    display: flex;
+    justify-content: space-evenly;
+
+    @media screen and (max-width: 760px){
+        display: block;
+    }
+       
+    &__company {
+        text-align: center;
+        width: 40%;
+        @media screen and (max-width: 760px){
+            width: 100%;
+        }
+        & img {
+            margin: 3rem auto;
+        }
+    }
+
+    &__offer {
+        width: 20%;
+        padding-left: 3rem;
+        @media screen and (max-width: 760px){
+            display: none; 
+        }
+        & ul {
+            list-style: none;
+            text-transform: uppercase;
+        }
+    }
+
+    &__contact {
+        width: 30%;
+        @media screen and (max-width: 760px){
+            width: 100%;
+            text-align: center;
+        }
+    }
+
+    &__social {
+        width: 10%;
+        @media screen and (max-width: 760px){
+            width: 100%;
+            text-align: center;
+        }
+
+        & img {
+            margin: 1rem 2rem;
+        }
+    }
+}

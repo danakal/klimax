@@ -1,0 +1,17 @@
+.icon {
+    width:45%;
+    height: 18rem;
+    margin: 1rem; 
+    & img {
+        width: 8rem;
+        margin: 0 auto;
+    }
+    & p {
+        text-transform: uppercase;
+        font-weight: 700;
+        font-size: 1.7rem;
+        padding: 2rem 3rem;
+        text-align: center;
+    }
+    
+}

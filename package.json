@@ -1,0 +1,14 @@
+{
+  "name": "klimax",
+  "version": "1.0.0",
+  "description": "landing page for klimax",
+  "main": "index.js",
+  "scripts": {
+    "compile:sass": "node-sass sass/main.scss css/style.css -w"
+  },
+  "author": "dana kalcikova",
+  "license": "ISC",
+  "devDependencies": {
+    "node-sass": "^4.14.1"
+  }
+}

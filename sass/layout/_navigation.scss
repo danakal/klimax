@@ -1,0 +1,105 @@
+.navigation {
+    font-size: 1.6rem;
+    padding: 0 10rem;
+    width: 90%;
+    margin:  0 auto;
+
+    @media only screen and (max-width: 1450px) {
+        width: 100%;
+        padding: 0 5rem;
+    }
+        
+    &__top {
+        background-color: $color-grey-light;
+        height: 5rem;
+        text-align: right;
+        padding: 0 5rem;
+
+        &--text {
+            display: inline-block;
+            margin-top: 1rem;
+
+            & a {
+                text-decoration: none;
+                color: $color-black;
+                margin-left: 2rem; 
+            }
+            
+            & img {
+                vertical-align: text-bottom;
+            }
+        }
+    }
+
+    &__bottom {
+        background-color: $color-white;
+        padding: 3rem 5.5rem;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        @media screen and (max-width:1200px) {
+            padding: 2rem 3rem;
+      
+         }
+
+        &--logo {
+             @media screen and (max-width:1200px) {
+                width: 20rem;
+          
+             }
+        }
+
+        
+        &--navbar {
+            position: relative;
+        }
+
+        &--navbar ul{
+            list-style: none;
+        }
+
+        &--navbar li {
+            display: inline-block;
+            padding-right: 1rem;
+            margin-right: 1rem;
+
+            &.border--right {
+            border-right: 1px solid $color-black;
+            }
+            
+            &.btn__navigation {
+                background-color: $color-primary;
+                padding: .5rem;
+
+                & a {
+                    color: $color-white;
+                    &:hover {
+                        color: $color-white;
+                    }
+                }
+            }
+            
+            
+            & a {
+                color: $color-black;
+                text-decoration: none;
+                text-transform: uppercase;
+                
+                &:hover {
+                    color: $color-primary;
+                }
+            }
+        }
+
+        &--navbar-active a {
+            color: $color-primary !important;
+        }
+    }
+}
+
+.dropdown-menu {
+    font-size: 1.6rem;
+}
+
+

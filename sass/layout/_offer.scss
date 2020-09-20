@@ -1,0 +1,42 @@
+.offer {
+    display: flex;
+    overflow: hidden;
+
+    @media screen and (max-width: 1200px){
+        flex-direction: column;
+    }
+            
+    &__text {
+        width: 50%;
+        font-size: $default-font-size;
+        @media screen and (max-width: 1200px){
+            width: 100%; 
+        }
+        
+        & p {
+            padding: 0 4rem;
+        }
+    }
+
+    &__icons {
+        display: flex;
+        flex-wrap: wrap;
+        vertical-align: top;
+        text-align: center;
+        width: 50%;
+        margin: 0 auto; 
+
+        @media screen and (max-width: 1200px){
+            margin: 0;
+            width: 100%;
+        }
+
+        & .icon:nth-of-type(odd){
+        border-right: 1px solid $color-grey-dark;
+       
+        }
+
+    }
+
+}
+

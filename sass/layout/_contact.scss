@@ -1,0 +1,36 @@
+.contact {
+    display: flex;
+    justify-content: center;
+
+    @media screen and (max-width: 760px){
+        display: block;
+    }
+
+    &__item {
+        display: flex;
+        
+        &:nth-of-type(odd) {
+            border-right: 1px solid $color-black;
+
+            @media screen and (max-width: 760px){
+                border-right: hidden;
+                border-bottom: 1px solid $color-black;
+            }
+        }
+
+        & img {
+            float:left;
+            margin: 0 5rem;
+            @media screen and (max-width: 1200px){
+                width: 5rem;
+                margin: 1rem 3rem;
+            }
+        }
+
+        & p{
+            font-size: 3rem;
+            font-weight: 700;
+            margin: auto 3rem;
+        }
+    }
+}
