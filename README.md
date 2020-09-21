@@ -5,9 +5,7 @@ Stránka vytvořena v HTML ( soubor index.html), stylování v CSS (soubor style
 
 ## Instalace a spuštění aplikace
 
-Z projektu odstraněna složka node_modules (je nutné doinstalovat příkazem *npm install*). 
-
-Souhrnný kód CSS je v souboru style.css. Jednotlivé části CSS jsou ve složce sass. Pojmenování tříd dle BEM (lehce upravené kvůli kolizím s bootstrapem), spuštění přes Live Server. Při změně v souboru ze složky sass je nutné provést kompilaci příkazem *npm run compile:sass*
+Pro spuštění stránky stačí otevřít soubor index.html. Souhrnný kód CSS je v souboru style.css. Jednotlivé části CSS jsou ve složce sass.  Pojmenování tříd dle BEM (lehce upravené kvůli kolizím s bootstrapem). Při změně v souboru ze složky sass je nutné provést kompilaci příkazem *npm run compile:sass*, spuštění přes Live Server. 
 
 ### Co se mi nepovedlo
 
