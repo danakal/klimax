@@ -8,11 +8,12 @@
 }
 
 .header {
-    &__top {
+    &-top {
         margin: 0 12%;
+        
     }
 
-    &__bottom {
+    &-bottom {
         padding: 4rem 12%;
 
         @media screen and (min-width: 900px) and (max-width: 1200px){

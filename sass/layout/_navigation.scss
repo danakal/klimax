@@ -1,21 +1,23 @@
 .navigation {
-    font-size: 1.6rem;
+    font-size: 1.8rem;
     padding: 0 10rem;
     width: 90%;
     margin:  0 auto;
+    
 
     @media only screen and (max-width: 1450px) {
         width: 100%;
-        padding: 0 5rem;
+        padding: 0 4rem;
+        margin: 0;
     }
         
-    &__top {
+    &-top {
         background-color: $color-grey-light;
         height: 5rem;
         text-align: right;
         padding: 0 5rem;
 
-        &--text {
+        &__text {
             display: inline-block;
             margin-top: 1rem;
 
@@ -25,25 +27,25 @@
                 margin-left: 2rem; 
             }
             
-            & img {
-                vertical-align: text-bottom;
+            & i {
+                //vertical-align: text-bottom;
+                color: $color-primary;
+                font-size: 2.2rem;
             }
         }
     }
 
-    &__bottom {
+    &-bottom {
         background-color: $color-white;
-        padding: 3rem 5.5rem;
+        padding: 1.5rem 0;
         display: flex;
         justify-content: space-between;
-        align-items: center;
+        align-items: center !important;
 
-        @media screen and (max-width:1200px) {
-            padding: 2rem 3rem;
-      
-         }
+        
 
-        &--logo {
+        &__logo {
+            margin-right: auto;
              @media screen and (max-width:1200px) {
                 width: 20rem;
           
@@ -51,18 +53,21 @@
         }
 
         
-        &--navbar {
+        &__navbar {
             position: relative;
         }
 
-        &--navbar ul{
+        &__navbar ul{
             list-style: none;
+            margin-right: 0 !important;
+            margin-left: auto;
         }
 
-        &--navbar li {
+        &__navbar li {
             display: inline-block;
             padding-right: 1rem;
             margin-right: 1rem;
+            align-self: center !important;
 
             &.border--right {
             border-right: 1px solid $color-black;
@@ -71,6 +76,8 @@
             &.btn__navigation {
                 background-color: $color-primary;
                 padding: .5rem;
+                align-self: center !important;
+
 
                 & a {
                     color: $color-white;
@@ -86,16 +93,20 @@
                 text-decoration: none;
                 text-transform: uppercase;
                 
-                &:hover {
-                    color: $color-primary;
-                }
+                
             }
         }
 
-        &--navbar-active a {
-            color: $color-primary !important;
-        }
+        
     }
+}
+
+.nav-item a:hover {
+    color: $color-primary !important;
+}
+
+.dropdown-item:active {
+    background-color: inherit;
 }
 
 .dropdown-menu {
