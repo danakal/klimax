@@ -1,19 +1,13 @@
 # Klimax
 
-Stránka vytvořena v HTML (soubor index.html), stylování v CSS (soubor style.css) s využitím SASS (SCSS) a Bootstrap5 (carousel, dropdown).
+Stránka vytvořena dle dodaného grafického návrhu (obrázek v jpg). Tvorba HTML (soubor index.html), stylování v CSS (soubor style.css) s využitím SASS (SCSS) a Bootstrap5 (carousel, dropdown). Live na adrese: https://klima.netlify.app/ 
 
 
 ## Instalace a spuštění aplikace
 
-Pro spuštění stránky stačí otevřít soubor index.html. Souhrnný kód CSS je v souboru style.css. CSS je upraveno pro 10 předešlých verzí všech prohlížečů a je provedena komprese. Jednotlivé části CSS jsou ve složce sass.  Pojmenování tříd dle BEM (lehce upravené kvůli kolizím s bootstrapem). Při změně v souboru ze složky sass je nutné provést kompilaci příkazem *npm run watch:sass*, spuštění přes Live Server. 
+Pro spuštění stránky stačí otevřít soubor index.html. Souhrnný kód CSS je v souboru style.css. CSS je upraveno pro 10 předešlých verzí všech prohlížečů a je provedena komprese. Jednotlivé části CSS jsou ve složce sass.  Pojmenování tříd dle BEM (lehce upravené kvůli kolizím s bootstrapem). 
 
-### Co se mi nepovedlo
+Instalace souborů *npm install*. Spuštění dev prostředí *npm run watch:sass*, spuštění přes Live Server (nebo *npm start*). Finální kompilace s kompresí všech souborů *npm run build:css*, resp. po jednotlivých krocích: kompilace CSS souboru ze Sass *npm compile:sass*, doplnění prefixů 10 předešlých verzí do CSS souboru *npm prefix:css*, komprese CSS souboru *npm compress:css*.
 
-- křivka na pozadí - nepřišla jsem na kombinaci, jak dostat modrou křivku nad obrázek v pozadí a zároveň pod obrázek klimatizace :-(
-- nestihla jsem udělat z menu hamburger
-- po několika pokusech jsem vzdala ty modré čárky nad vybranými texty, při změně velikosti stránky mi to lítalo všude kolem...
 
-V každém případě teď budu mít spoustu příležitostí pořídit u firmy Klimax klimatizaci, protože reklama na jejich webové stránky na mě vyskakuje úplně všude :-)
-
-Pracovala jsem na tom cca 3 dny, hodiny jsem neměřila, jsem se u toho učila dělat se Sassem, na který jsem pořídila kurz na Udemy. Konečně jsem zkrotila kilometr CSS na responzivita na konci se mi dělala opravdu snadno.
 
